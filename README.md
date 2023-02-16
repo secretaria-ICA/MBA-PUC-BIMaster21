@@ -38,9 +38,19 @@ Donec molestie, ante quis tempus consequat, mauris ante fringilla elit, euismod 
 
 ### 1. Introdução
 
-A base de dados para a realização do estudo analítico comparativo foi obtida do kaggle e contém 38 classes de tipos de plantas saudáveis ou com algum tipo de doença (fungo). Foi realizada uma análise da quantidade de ocorrências de imagens, em cada classe, e para superar limites do ambiente de execução (processamento e consumo de GPU) foi necessário um corte reduzindo o escopo para 04 classes da categoria Uva, o que não afeta o objetivo do estudo. O processo para utiliizar a t[ecnica de transfer learming utilizou a base de imagens da Imaginet e principalmente consultas em exemplos do Keras (keras.org), nesse contexto.  Ap[os a an[alise e preparo da base de dados de imagens foram elaborados quatro notebooks python, um para cada rede CNN com transfer learning e realizadas oito execu;'oes dos modelos, conservando uma estrutura commum de canadas e neur"onios e variando determinados par'metros comuns, para coleta e compara;'ao dos valores das m[etricas de treino , vaida;'ao e testes.
+A base de dados para a realização do estudo analítico comparativo foi obtida do kaggle e contém 38 classes de tipos de plantas saudáveis ou com algum tipo de doença (fungo). Foi realizada uma análise da quantidade de ocorrências de imagens, em cada classe, e para adapta;'ao a limites do ambiente de execução (processamento e consumo de GPU) foi necessário um corte reduzindo o escopo para 04 classes da categoria Uva, o que não afeta o objetivo do estudo. O processo para utiliizar a t[ecnica de transfer learming adotou a base de imagens da Imaginet e principalmente consultas em exemplos do Keras (keras.org), nesse contexto.  Ap[os a an[alise e preparo da base de dados de imagens foram elaborados quatro notebooks python, um para cada rede CNN com transfer learning e realizadas oito execu;'oes de cen[arios dos modelos, conservando uma estrutura commum de camadas e neur"onios e variando determinados par'metros comuns, para coleta e compara;'ao dos valores das m[etricas de treino , vaida;'ao e testes.
 
 ### 2. Modelagem
+
+O modelo proposto para a an[alise comparativa das redes CNN com transfer learning foi estabelecido da seguinte forma?
+a) Base de dados com 04 classes imagens de doen;as em folhas de Uvas (xxxx, xxxx, xxxx, xxxxx). A classe xxx foi descartada ap[os an[alise da quantidade de imagens.
+b) T[ecnica de Tranfer Learning com uso da Inaginet nos modelos de CNN Resnet50, Xception, VGG19 e VGG16 com base no Keras.
+c) C[odigos em python padronizados para todas as redes CNN.
+d) Mesma Estrutura da camada dense para cada modelo (
+e) Execu;'ao de oito cen[arios de cada rede CNN, citada, considerando treino, valida;'ao e testes, com coleta das m[etricas de xxxxxxxxxxxx
+e.1) Para cada cen[ario uma defini;'ao de combina;'ao de valores e ativa;'oes dos par"ametros elarly rate, early stop, dropout e batchnormalization.
+f)An[alise e compara;'ao dos resultados dos valores coletados
+
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar nisl vestibulum tortor fringilla, eget imperdiet neque condimentum. Proin vitae augue in nulla vehicula porttitor sit amet quis sapien. Nam rutrum mollis ligula, et semper justo maximus accumsan. Integer scelerisque egestas arcu, ac laoreet odio aliquet at. Sed sed bibendum dolor. Vestibulum commodo sodales erat, ut placerat nulla vulputate eu. In hac habitasse platea dictumst. Cras interdum bibendum sapien a vehicula.
 
