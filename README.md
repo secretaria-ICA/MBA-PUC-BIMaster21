@@ -38,30 +38,16 @@ Donec molestie, ante quis tempus consequat, mauris ante fringilla elit, euismod 
 
 ### 1. Introdução
 
-A base de dados para a realização do estudo analítico comparativo foi obtida do kaggle e contém 38 classes de tipos de plantas saudáveis ou com algum tipo de doença (fungo). Foi realizada uma análise da quantidade de ocorrências de imagens, em cada classe, e para adapta;'ao a limites do ambiente de execução (processamento e consumo de GPU) foi necessário um corte reduzindo o escopo para 04 classes da categoria Uva, o que não afeta o objetivo do estudo. O processo para utiliizar a t[ecnica de transfer learming adotou a base de imagens da Imaginet e principalmente consultas em exemplos do Keras (keras.org), nesse contexto.  Ap[os a an[alise e preparo da base de dados de imagens foram elaborados quatro notebooks python, um para cada rede CNN com transfer learning e realizadas oito execu;'oes de cen[arios dos modelos, conservando uma estrutura commum de camadas e neur"onios e variando determinados par'metros comuns, para coleta e compara;'ao dos valores das m[etricas de treino , vaida;'ao e testes.
+A base de dados para a realização do estudo analítico comparativo foi obtida do kaggle e contém 38 classes de tipos de plantas saudáveis ou com algum tipo de doença (fungo). Foi realizada uma análise da quantidade de ocorrências de imagens, em cada classe, e para adapta;'ao a limites do ambiente de execução (processamento e consumo de GPU) foi necessário um corte reduzindo o escopo para 04 classes da categoria Uva, o que não afeta o objetivo do estudo. O processo para utillizar a técnica de transfer learming adotou a base de imagens da Imaginet e principalmente consultas em exemplos do Keras (keras.org), nesse contexto.  Após a análise e preparo da base de dados de imagens foram elaborados quatro notebooks python, um para cada rede CNN com transfer learning e realizadas oito execuções de cenários dos modelos, conservando uma estrutura commum de camadas e neurônios e variando determinados parâmetros comuns, para coleta e comparação dos valores das métricas de treino , vaidação e testes.
 
 ### 2. Modelagem
 
-O modelo proposto para a an[alise comparativa das redes CNN com transfer learning foi estabelecido da seguinte forma?
-Utilizar uma Base de dados de entrada com 04 classes de imagens de doen;as em folhas de Uvas (xxxx, xxxx, xxxx, xxxxx). A classe xxx foi descartada ap[os an[alise da quantidade de imagens, na etapa de an[alise das frequ"encias de imagens em cada classe. Constru;'ao de quatro c[odigos em python, padronizados, com utiliza;'ao de tranfer learning, uso da Imaginet, e com base nos modelos CNN Resnet50, Xception, VGG19 e VGG16. Para que a an[alise comparativa ficasse preservada foi utilizada a mesma estrutura da camada dense e quantidade de neuronios, para cada modelo de rede CNN (Dense1xxx, Dense2.....). Com base nesse padrao, condi;'oes e restri;'oes foram executados oito cena[rios, para cada modelo de rede CNN, com varia;'ao em combina;'oes dos par"ametros Early Rate, Early Stop, Dropout e BatchNormalization. O modelo n'ao considerou a utiliza;'ao da t[ecncia de dataaugmentation , por estar fora do escopo.
+O modelo proposto para a análise comparativa das redes CNN, com transfer learning, foi estruturado da seguinte forma:
+Utilizar uma Base de dados de entrada com 04 classes de imagens de doenças em folhas de Uvas (xxxx, xxxx, xxxx, xxxxx). A classe xxx foi descartada após análise da quantidade de imagens, na etapa de análise das frequências de imagens em cada classe. Construção de quatro códigos em python, padronizados, com utilização de tranfer learning, uso da Imaginet, e com base nos modelos CNN Resnet50, Xception, VGG19 e VGG16. Para que a análise comparativa ficasse preservada foi utilizada a mesma estrutura da camada dense e quantidade de neurônios, para cada modelo de rede CNN (Dense1xxx, Dense2.....). Com base nesse padrão, condições e restriçõoes foram executados oito cenários, para cada modelo de rede CNN, com variação em combinações dos parâmetros Early Rate, Early Stop, Dropout e BatchNormalization. O modelo não considerou a utilização da técncia de data augmentation, por estar fora desse escopo.
 
-A codifica;'ao de notebooks python, para cada modelo CNN adotou um padr'ao, com as seguintes etapas? Defini;'ao dos dados de treino, valida;'ao e testes. Contagens de cada classe e quantidade de imagens nas mesmas. Preparo de cada conjunto de dados de treino, valida;'ao e teste, com an[alise do shape das imagens e normaliza;'ao dos dados de entrada. Ana[lise da estrutura da rede CNN em quest'ao. An[alise da estrutura da rede CNN truncada. An[alise das camadas do modelo final com transfer learning e camdas Dense. Compila;'ao do modelo. Treino e An[alise das m[etricas. Testes e Infer"encia.
+A codificaçãa de notebooks python, para cada modelo CNN, contém as seguintes etapas: Definição dos dados de treino, validação e testes; Contagens de cada classe e quantidade de imagens nas mesmas; Preparo de cada conjunto de dados de treino, validação e teste, com análise do formato das imagens e normalização dos dados de entrada; Análise da estrutura da rede CNN em questão; Análise da estrutura da rede CNN truncada; Análise das camadas do modelo final com transfer learning e camdas dense; Compilação do modelo; Treino e análise das métricas; Testes e Inferência;
 
-Com esse padr'ao de codifica;a'o facilitou a execu;'ao recrusiva dos modelos e coleta das informa;'eos nos oito cen[arios. Sendo o oitavo cen[ario o ponto de corte para a an[lise comparativa final.
-
-
-
-
-
-d) Mesma Estrutura da camada dense para cada modelo (
-e) Execu;'ao de oito cen[arios de cada rede CNN, citada, considerando treino, valida;'ao e testes, com coleta das m[etricas de xxxxxxxxxxxx
-e.1) Para cada cen[ario uma defini;'ao de combina;'ao de valores e ativa;'oes dos par"ametros elarly rate, early stop, dropout e batchnormalization.
-f)An[alise e compara;'ao dos resultados dos valores coletados
-
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar nisl vestibulum tortor fringilla, eget imperdiet neque condimentum. Proin vitae augue in nulla vehicula porttitor sit amet quis sapien. Nam rutrum mollis ligula, et semper justo maximus accumsan. Integer scelerisque egestas arcu, ac laoreet odio aliquet at. Sed sed bibendum dolor. Vestibulum commodo sodales erat, ut placerat nulla vulputate eu. In hac habitasse platea dictumst. Cras interdum bibendum sapien a vehicula.
-
-Proin feugiat nulla sem. Phasellus consequat tellus a ex aliquet, quis convallis turpis blandit. Quisque auctor condimentum justo vitae pulvinar. Donec in dictum purus. Vivamus vitae aliquam ligula, at suscipit ipsum. Quisque in dolor auctor tortor facilisis maximus. Donec dapibus leo sed tincidunt aliquam.
+Com o padrão de codificação facilitou a execução recursiva dos modelos e coleta das informação nos oito cenários. Sendo o oitavo cenário o ponto de corte para a análise comparativa final dos resultados.
 
 ### 3. Resultados
 
