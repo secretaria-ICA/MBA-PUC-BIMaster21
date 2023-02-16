@@ -43,9 +43,16 @@ A base de dados para a realização do estudo analítico comparativo foi obtida 
 ### 2. Modelagem
 
 O modelo proposto para a an[alise comparativa das redes CNN com transfer learning foi estabelecido da seguinte forma?
-a) Base de dados com 04 classes imagens de doen;as em folhas de Uvas (xxxx, xxxx, xxxx, xxxxx). A classe xxx foi descartada ap[os an[alise da quantidade de imagens.
-b) T[ecnica de Tranfer Learning com uso da Inaginet nos modelos de CNN Resnet50, Xception, VGG19 e VGG16 com base no Keras.
-c) C[odigos em python padronizados para todas as redes CNN.
+Utilizar uma Base de dados de entrada com 04 classes de imagens de doen;as em folhas de Uvas (xxxx, xxxx, xxxx, xxxxx). A classe xxx foi descartada ap[os an[alise da quantidade de imagens, na etapa de an[alise das frequ"encias de imagens em cada classe. Constru;'ao de quatro c[odigos em python, padronizados, com utiliza;'ao de tranfer learning, uso da Imaginet, e com base nos modelos CNN Resnet50, Xception, VGG19 e VGG16. Para que a an[alise comparativa ficasse preservada foi utilizada a mesma estrutura da camada dense e quantidade de neuronios, para cada modelo de rede CNN (Dense1xxx, Dense2.....). Com base nesse padrao, condi;'oes e restri;'oes foram executados oito cena[rios, para cada modelo de rede CNN, com varia;'ao em combina;'oes dos par"ametros Early Rate, Early Stop, Dropout e BatchNormalization. O modelo n'ao considerou a utiliza;'ao da t[ecncia de dataaugmentation , por estar fora do escopo.
+
+A codifica;'ao de notebooks python, para cada modelo CNN adotou um padr'ao, com as seguintes etapas? Defini;'ao dos dados de treino, valida;'ao e testes. Contagens de cada classe e quantidade de imagens nas mesmas. Preparo de cada conjunto de dados de treino, valida;'ao e teste, com an[alise do shape das imagens e normaliza;'ao dos dados de entrada. Ana[lise da estrutura da rede CNN em quest'ao. An[alise da estrutura da rede CNN truncada. An[alise das camadas do modelo final com transfer learning e camdas Dense. Compila;'ao do modelo. Treino e An[alise das m[etricas. Testes e Infer"encia.
+
+Com esse padr'ao de codifica;a'o facilitou a execu;'ao recrusiva dos modelos e coleta das informa;'eos nos oito cen[arios. Sendo o oitavo cen[ario o ponto de corte para a an[lise comparativa final.
+
+
+
+
+
 d) Mesma Estrutura da camada dense para cada modelo (
 e) Execu;'ao de oito cen[arios de cada rede CNN, citada, considerando treino, valida;'ao e testes, com coleta das m[etricas de xxxxxxxxxxxx
 e.1) Para cada cen[ario uma defini;'ao de combina;'ao de valores e ativa;'oes dos par"ametros elarly rate, early stop, dropout e batchnormalization.
