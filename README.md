@@ -51,11 +51,11 @@ O padrão de codificação facilitou a execução recursiva dos modelos e coleta
 
 A estrutra padrão do modelo final a ser usado nas redes CNN com transfer learning foi a seguinte:
 
-Camada | Neurônios | Ativação | Otimizador | Loss                  |
------- | ----------|----------| ---------- | ----------------------|:
-Dense1 | 128       |relu      |SGD         |categorical_crosentropy|:
-Dense2 | 64        |relu      |SGD         |categorical_crosentropy|:
-Dense2 | 3         |relu      |SGD         |categorical_crosentropy|:
+Camada | Neurônios | Ativação | Otimizador | Loss                  
+------ | ----------|----------| ---------- | ----------------------:
+Dense1 | 128       |relu      |SGD         |categorical_crosentropy
+Dense2 | 64        |relu      |SGD         |categorical_crosentropy
+Dense2 | 3         |relu      |SGD         |categorical_crosentropy
 
 ### 3. Resultados
 
