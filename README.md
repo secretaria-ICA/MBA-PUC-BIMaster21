@@ -47,7 +47,15 @@ Utilizar uma Base de dados de entrada com 04 classes de imagens de doenças em f
 
 A codificaçãa de notebooks python, para cada modelo CNN, contém as seguintes etapas: Definição dos dados de treino, validação e testes; Contagens de cada classe e quantidade de imagens nas mesmas; Preparo de cada conjunto de dados de treino, validação e teste, com análise do formato das imagens e normalização dos dados de entrada; Análise da estrutura da rede CNN em questão; Análise da estrutura da rede CNN truncada; Análise das camadas do modelo final com transfer learning e camdas dense; Compilação do modelo; Treino e análise das métricas; Testes e Inferência;
 
-Com o padrão de codificação facilitou a execução recursiva dos modelos e coleta das informação nos oito cenários. Sendo o oitavo cenário o ponto de corte para a análise comparativa final dos resultados.
+O padrão de codificação facilitou a execução recursiva dos modelos e coleta das informação nos oito cenários. Sendo o oitavo cenário o ponto de corte para a análise comparativa final dos resultados.
+
+A estrutra padrão do modelo final a ser usado nas redes CNN com transfer learning foi a seguinte:
+
+Camada | Neurônios | Ativação
+------  ----------- ----------:
+Dense1  128         relu
+Dense2  64          relu
+Dense2  3           relu
 
 ### 3. Resultados
 
