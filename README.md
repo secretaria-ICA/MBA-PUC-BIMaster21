@@ -53,9 +53,9 @@ A estrutra padrão do modelo final a ser usado nas redes CNN com transfer learni
 
 Camada | Neurônios | Ativação
 ------  ----------- ----------:
-Dense1  128         relu
-Dense2  64          relu
-Dense2  3           relu
+Dense1 | 128       |relu
+Dense2 | 64        |relu
+Dense2 | 3         |relu
 
 ### 3. Resultados
 
