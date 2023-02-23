@@ -81,7 +81,7 @@ Obs: Detalhes sobre a coleta dos resultados, dessas execuções, devem ser consu
 Métricas analisadas no treino e validação do modelo final, em cada cenário executado:
 Treino   | Validação
 -------- | :--------
-Loss     | val_loss
+loss     | val_loss
 accuracy | val_accuracy
 precision| val_precision
 recall   | val_recall
