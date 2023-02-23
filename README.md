@@ -59,14 +59,16 @@ Dense3 | 3         |relu      |SGD         |categorical_crossentropy
 
 Obs: As execuções dos cenários de 01 até 04, dos molelos, ainda considerou 4 classes na camada Dense3. Após a execução 04 uma classe foi descartada.
 
-Os parâmetros submetidos ao estudo, em cada cenário de execução, para os modelos CNN com transfer learning foram:
+Os parâmetros submetidos ao estudo, em cada cenário de execução de treino, para os modelos CNN com transfer learning foram:
 
 Parâmetro         | Execução 01 | Execução 02 | Execução 03 | Execução 04 | Execução 05 | Execução 06 | Execução 07 | Execução 08
 ----------------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | :----------
-EarlyRate         |             |             |             |             |             |             |             |50
-EarlyStop         |             |             |             |             |             |             |             |50
-BatchNormalization|             |             |             |             |             |             |             |50             
-Dropout           |             |             |             |             |             |             |             |
+LearningRate      | 0.5         | 0.5         | 0.1         |             |             |             |             |50
+EarlyStop         | 50          | 50          | 50          |             |             |             |             |50
+BatchNormalization| Não aplicado| Não aplicado| Não aplicado|             |             |             |             |50             
+Dropout           | Não aplicado| 0.2         | Não aplicado|             |             |             |             |
+
+Obs: Detalhes sobre a coleta dos resultados dessas execuções devem ser consultados nas pastas e arquivos sobre cada execução.
 
 ### 3. Resultados
 
