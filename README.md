@@ -43,7 +43,7 @@ A base de dados para a realização do estudo analítico comparativo foi obtida 
 ### 2. Modelagem
 
 O modelo proposto para a análise comparativa das redes CNN, com transfer learning, foi estruturado da seguinte forma:
-Utilizar uma Base de dados de entrada com 04 classes de imagens de doenças em folhas de Uvas (xxxx, xxxx, xxxx, xxxxx). A classe xxx foi descartada após análise da quantidade de imagens, na etapa de análise das frequências de imagens em cada classe. Construção de quatro códigos em python, padronizados, com utilização de tranfer learning, uso da Imaginet, e com base nos modelos CNN Resnet50, Xception, VGG19 e VGG16. Para que a análise comparativa ficasse preservada foi utilizada a mesma estrutura da camada dense e quantidade de neurônios, para cada modelo de rede CNN. Com base nesse padrão, condições e restriçõoes foram executados oito cenários, para cada modelo de rede CNN, com variação em combinações dos parâmetros Early Rate, Early Stop, Dropout e BatchNormalization. O modelo não considerou a utilização da técncia de data augmentation, por estar fora desse escopo.
+Utilizar uma Base de dados de entrada com 04 classes de imagens de doenças em folhas de Uvas (xxxx, xxxx, xxxx, xxxxx). A classe xxx foi descartada após análise da quantidade de imagens, na etapa de análise das frequências de imagens em cada classe. Construção de quatro códigos em python, padronizados, com utilização de tranfer learning, uso da Imaginet, e com base nos modelos CNN Resnet50, Xception, VGG19 e VGG16. Para que a análise comparativa ficasse preservada foi utilizada a mesma estrutura da camada dense e quantidade de neurônios, para cada modelo de rede CNN. Com base nesse padrão, condições e restriçõoes foram executados oito cenários, para cada modelo de rede CNN, com variação em combinações dos parâmetros Learning Rate, Early Stop, Dropout e BatchNormalization. O modelo não considerou a utilização da técncia de data augmentation, por estar fora desse escopo.
 
 A codificaçãa de notebooks python, para cada modelo CNN, contém as seguintes etapas: Definição dos dados de treino, validação e testes; Contagens de cada classe e quantidade de imagens nas mesmas; Preparo de cada conjunto de dados de treino, validação e teste, com análise do formato das imagens e normalização dos dados de entrada; Análise da estrutura da rede CNN em questão; Análise da estrutura da rede CNN truncada; Análise das camadas do modelo final com transfer learning e camdas dense; Compilação do modelo; Treino e análise das métricas; Testes e Inferência;
 
@@ -61,14 +61,14 @@ Obs: As execuções dos cenários de 01 até 04, dos molelos, ainda considerou 4
 
 Os parâmetros submetidos ao estudo, em cada cenário de execução de treino, para os modelos CNN com transfer learning foram:
 
-Parâmetro         | Execução 01 | Execução 02 | Execução 03 | Execução 04 | Execução 05 | Execução 06 | Execução 07 | Execução 08
------------------ | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | :----------
-LearningRate      | 0.5         | 0.5         | 0.1         |             |             |             |             |50
-EarlyStop         | 50          | 50          | 50          |             |             |             |             |50
-BatchNormalization| Não aplicado| Não aplicado| Não aplicado|             |             |             |             |50             
-Dropout           | Não aplicado| 0.2         | Não aplicado|             |             |             |             |
+Parâmetro         | Execução 01 | Execução 02 | Execução 03 | Execução 04 | Execução 05 | Execução 05-i2 | Execução 06 | Execução 07 
+----------------- | ----------- | ----------- | ----------- | ----------- | ----------- | -------------- | ----------- | :----------- 
+LearningRate      | 0.5         | 0.5         | 0.1         | 0.5         |             |                |             |50           
+EarlyStop         | 50          | 50          | 50          | 50          |             |                |             |50           
+BatchNormalization| Não aplicado| Não aplicado| Não aplicado| Não aplicado|             |                |             |50                        
+Dropout           | Não aplicado| 0.2         | Não aplicado| 0.5         |             |                |             |             
 
-Obs: Detalhes sobre a coleta dos resultados dessas execuções devem ser consultados nas pastas e arquivos sobre cada execução.
+Obs: Detalhes sobre a coleta dos resultados, dessas execuções, devem ser consultados nas pastas e arquivos sobre cada execução.
 
 ### 3. Resultados
 
