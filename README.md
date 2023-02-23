@@ -63,17 +63,23 @@ Os parâmetros submetidos ao estudo, em cada cenário de execução de treino, p
 
 Parâmetro         | Execução 01 | Execução 02 | Execução 03 | Execução 04 | Execução 05 | Execução 05-i2 | Execução 06 | Execução 07 | Execução 08
 ----------------- | ----------- | ----------- | ----------- | ----------- | ----------- | -------------- | ----------- | ----------- | :-----------
-LearningRate      | 0.5         | 0.5         | 0.1         | 0.5         | 0.01        | 0.01           | 0.03        |0.01         |           
-EarlyStop         | 50          | 50          | 50          | 50          | 50          | 25             | 25          |25           |           
-BatchNormalization| Não aplicado| Não aplicado| Não aplicado| Não aplicado| Não aplicado| Não aplicado   | Aplicado    |Aplicado     |                       
-Dropout           | Não aplicado| 0.2         | Não aplicado| 0.5         | 0.2 *       | 0.2 **         | 0.2 *       |0.2 *        |            
+LearningRate      | 0.5         | 0.5         | 0.1         | 0.5         | 0.01        | 0.01           | 0.03        |0.01         | 0.01          
+EarlyStop         | 50          | 50          | 50          | 50          | 50          | 25             | 25          |25           | 25          
+BatchNormalization| Não aplicado| Não aplicado| Não aplicado| Não aplicado| Não aplicado| Não aplicado   | Aplicado    |Aplicado     | Aplicado             
+Dropout           | Não aplicado| 0.2         | Não aplicado| 0.5         | 0.2 *       | 0.2 **         | 0.2 *       |0.2 *        | 0.2 **           
 
 Dropout inserido antes da camanda pooling (asterístico).
 Dropout inserido após a camanda pooling (asterístico duplo).
 Obs: Detalhes sobre a coleta dos resultados, dessas execuções, devem ser consultados nas pastas e arquivos sobre cada execução.
 
-Métricas analisadas no Treino e Validação do Modelo Final:
-
+Métricas analisadas no Treino e Validação do Modelo Final, em cada cenário executado:
+Treino   | Validação
+-------- | :--------
+Loss     | val_loss
+accuracy | val_accuracy
+precision| val_precision
+recall   | val_recall
+auc      | val_auc
 
 
 ### 3. Resultados
