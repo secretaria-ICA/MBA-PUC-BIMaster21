@@ -63,7 +63,7 @@ Dense1 | 128       |relu      |Adam        |categorical_crossentropy
 Dense2 | 64        |relu      |Adam        |categorical_crossentropy
 Dense3 | 3         |relu      |Adam        |categorical_crossentropy
 
-Obs: As execuções dos cenários de 01 até 04, dos molelos, ainda considerou 4 classes na camada Dense3. Após a execução 04 uma classe foi descartada.
+Obs: Após análise das frequências de classes uma delas foi descartada por não conter imagens.
 
 Os parâmetros submetidos ao estudo, em cada cenário de execução de treino, para os modelos CNN com transfer learning foram:
 
