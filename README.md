@@ -43,7 +43,7 @@ A base de dados para a realização do estudo analítico comparativo foi obtida 
 ### 2. Modelagem
 
 O modelo proposto para a análise comparativa das redes CNN, com transfer learning, foi estruturado da seguinte forma:
-Utilizar uma Base de dados de entrada com 03 classes de imagens de doenças em folhas de Uvas (Grape___healthy, Grape___Esca_(Black_Measles) e Grape___Black_rot). Uma classe foi descartada após análise da quantidade de imagens, na etapa de análise das frequências de imagens em cada classe. Construção de quatro códigos em python, padronizados, com utilização de tranfer learning, uso da Imaginet, e com base nos modelos CNN Resnet50, Xception, VGG19 e VGG16. Para que a análise comparativa ficasse preservada foi utilizada a mesma estrutura da camada dense e quantidade de neurônios, para cada modelo de rede CNN. Com base nesse padrão, condições e restriçõoes foram executados oito cenários, para cada modelo de rede CNN, com variação em combinações dos parâmetros Learning Rate, Early Stop, Dropout e BatchNormalization. O modelo não considerou a utilização da técncia de data augmentation, por estar fora desse escopo.
+Utilizar uma Base de dados de entrada com 03 classes de imagens de doenças em folhas de Uvas (Grape___healthy, Grape___Esca_(Black_Measles) e Grape___Black_rot). Uma classe foi descartada após análise da quantidade de imagens, na etapa de análise das frequências de imagens em cada classe. Construção de quatro códigos em python, padronizados, com utilização de tranfer learning, uso da Imagenet, e com base nos modelos CNN Resnet50, Xception, VGG19 e VGG16. Para que a análise comparativa ficasse preservada foi utilizada a mesma estrutura da camada dense e quantidade de neurônios, para cada modelo de rede CNN. Com base nesse padrão, condições e restriçõoes foram executados oito cenários, para cada modelo de rede CNN, com variação em combinações dos parâmetros Learning Rate, Early Stop, Dropout e BatchNormalization. O modelo não considerou a utilização da técncia de data augmentation, por estar fora desse escopo.
 
 A codificaçãa de notebooks python, para cada modelo CNN, contém as seguintes etapas: Definição dos dados de treino, validação e testes; Contagens de cada classe e quantidade de imagens nas mesmas; Preparo de cada conjunto de dados de treino, validação e teste, com análise do formato das imagens e normalização dos dados de entrada; Análise da estrutura da rede CNN em questão; Análise da estrutura da rede CNN truncada; Análise das camadas do modelo final com transfer learning e camdas dense; Compilação do modelo; Treino e análise das métricas; Testes e Inferência;
 
@@ -53,7 +53,7 @@ Informações da base de dados:<br/>
 
 a) Base de dados de entrada: Imagens de folhas de classes de vegetais saudáveis ou com algum tipo de doença. Utilizado um sbconjunto de 3 classes de de imagens de folhas de Uva. Fonte original da base de dados: https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset. <br/>
 b) Total de umagens de treino: 4659 e total de imagens de validação: 1169. Para os testes de inferência foram utilizadas 10 imagens de cada classe.<br/>
-c) Base de dados para utilização de transfer learning: Imaginet.
+c) Base de dados para utilização de transfer learning: Imagenet.
 
 A estrutra padrão do modelo final a ser usado nas redes CNN, com transfer learning, foi a seguinte:
 
