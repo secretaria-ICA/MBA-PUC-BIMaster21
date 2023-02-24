@@ -72,10 +72,10 @@ Parâmetro         | Execução 01 | Execução 02 | Execução 03 | Execução 
 LearningRate      | 0.5         | 0.5         | 0.1         | 0.5         | 0.01        | 0.01           | 0.03        |0.01         | 0.01          
 EarlyStop         | 50          | 50          | 50          | 50          | 50          | 25             | 25          |25           | 25          
 BatchNormalization| Não aplicado| Não aplicado| Não aplicado| Não aplicado| Não aplicado| Não aplicado   | Aplicado    |Aplicado     | Aplicado             
-Dropout           | Não aplicado| 0.2         | Não aplicado| 0.5         | 0.2 *       | 0.2 **         | 0.2 *       |0.2 *        | 0.2 **           
+Dropout           | Não aplicado| 0.2 *       | Não aplicado| 0.5 *       | 0.2 *       | 0.2 **         | 0.2 *       |0.2 *        | 0.2 **           
 
-Dropout inserido antes da camanda pooling (asterístico).
-Dropout inserido após a camanda pooling (asterístico duplo).
+Dropout inserido antes da camanda pooling (asterístico).<br/>
+Dropout inserido após a camanda pooling (asterístico duplo).<br/>
 Obs: Detalhes sobre a coleta dos resultados, dessas execuções, devem ser consultados nas pastas e arquivos sobre cada execução.
 
 Métricas analisadas no treino e validação do modelo final, em cada cenário executado:
