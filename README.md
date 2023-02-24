@@ -61,7 +61,7 @@ Camada | Neurônios | Ativação | Otimizador | Loss
 ------ | ----------|----------| ---------- | :----------------------
 Dense1 | 128       |relu      |Adam        |categorical_crossentropy
 Dense2 | 64        |relu      |Adam        |categorical_crossentropy
-Dense3 | 3         |relu      |Adam        |categorical_crossentropy
+Dense3 | 3         |sofmax    |Adam        |categorical_crossentropy
 
 Obs: Após análise das frequências de classes uma delas foi descartada por não conter imagens.
 
