@@ -59,9 +59,9 @@ A estrutra padrão do modelo final a ser usado nas redes CNN, com transfer learn
 
 Camada | Neurônios | Ativação | Otimizador | Loss                  
 ------ | ----------|----------| ---------- | :----------------------
-Dense1 | 128       |relu      |SGD         |categorical_crossentropy
-Dense2 | 64        |relu      |SGD         |categorical_crossentropy
-Dense3 | 3         |relu      |SGD         |categorical_crossentropy
+Dense1 | 128       |relu      |Adam        |categorical_crossentropy
+Dense2 | 64        |relu      |Adam        |categorical_crossentropy
+Dense3 | 3         |relu      |Adam        |categorical_crossentropy
 
 Obs: As execuções dos cenários de 01 até 04, dos molelos, ainda considerou 4 classes na camada Dense3. Após a execução 04 uma classe foi descartada.
 
