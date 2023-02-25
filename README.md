@@ -92,12 +92,46 @@ Obs: Para ponto de corte na coleta dos valores das métricas no estudo comparati
 
 ### 3. Resultados
 
-A coleta dos resultados foi realizada para cada execução de cada cenário, como informado no tópico de modelagem. Os melhores resultados para as métricas selecionadas para cada rede CNN, nesse contexto, começarama ser observados a partir do cenário de execução 05, em diante. Foi percepetível que o parâmetro Learning Rate provocava uma melhora considerável ou piora considerável nas métricas e que nem todos os quatro modelos de rede CNN respondiam de forma idêntica ao conjunto de valores aplicados nos parâmetros analisados (Learning Rate, Early Stop, Dropout e BatchNormalized).
+A coleta de resultados foi realizada após a execução dos códigos python, de cada cenário de Treino e Validação, considerando
+as variações envolvendo os valores de Learning Rate, Early Stop (evitar overfitting), inclusão ou não de Dropout, antes ou depois da etapa de polling,
+e a inclusão ou não de Bacth Normalization. Cada cenário pode ser consultado em documento no formato pdf na pasta xxxxxxx.<br/>
+Os valores coletados referem-se a úlima época de cada execução, para efeito comparativo entre os modelos.<br/>
+Os cenários 01 e 02 não apresentaram valores satisfatórios para as métricas analisadas e uma taxa da métrica "Loss" ainda reltivamente alta, e foi
+tendo como diferença entre os dois somente a inclusão do recurso de Dropout, sem outras alterações, mantendo o valor de Eraly Rate em 0.5.<br/>
 
-Os cenários x, y apresentaram ....
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar nisl vestibulum tortor fringilla, eget imperdiet neque condimentum. Proin vitae augue in nulla vehicula porttitor sit amet quis sapien. Nam rutrum mollis ligula, et semper justo maximus accumsan. Integer scelerisque egestas arcu, ac laoreet odio aliquet at. Sed sed bibendum dolor. Vestibulum commodo sodales erat, ut placerat nulla vulputate eu. In hac habitasse platea dictumst. Cras interdum bibendum sapien a vehicula.
+O cenário 03 foi retirado o recurso de Dropout e relizada somente uma variação do valor de Learning Rate de 0.5 para 0.1. Nesse contexto a Rede
+CNN Xception apresentou um bom valor para as métricas, com acurácia acima de 95%, porém as outras redes (Resnet50, VGG19 e VGG16) mantiveram os
+valores próximos ao cenário 01 e 02, sendo assim não satisfatórios. <br/>
 
-Proin feugiat nulla sem. Phasellus consequat tellus a ex aliquet, quis convallis turpis blandit. Quisque auctor condimentum justo vitae pulvinar. Donec in dictum purus. Vivamus vitae aliquam ligula, at suscipit ipsum. Quisque in dolor auctor tortor facilisis maximus. Donec dapibus leo sed tincidunt aliquam.
+** O cenário 04 o experimento foi reduzir de forma considerável o valor de Learning Rate para 0.01 e retornar com o recurso de Dropout (0.2) antes da eatapa de polling.<br/>
+A métricas dos modelos CNN Xception, VGG19 e VGG16 apresentaram satisfatórios para as métricas, porém a rede Resnet50 nesse contexto apresentou grande evolução, mas não acima de 90%.<br/>
+OBS: Analisar aqui um possível overfitting da Xception.<br/>
+
+Uma variação do cenário 04 alterou a etapa de Dropout (0.2) para após a etapa de polling, mantendo o valor de Learning Rate e Early Stop. Em termos de treino
+e validação não foi observada uma variação considerável nas métricas dos quato modelos CNN.<br/>
+
+O cenário 05 retomou as condições do cenário 04, com um pequena variação para maior no valor de Learning Rate, de 0,01 para 0,03 e o valor de 
+Early Stop de 50 para 25. Nesse contexto as Redes CNN Xception, VGG19 e VGG16 tiveram uma redução nos valores das métricas para treino e validação, de forma não satisfatória para superar 90%. Porém a Rede CNN Resnet50, apresentou métricas melhores do que o cenário 04, passando a marca de 90%. Ou seja essa CNN parece ter sido menos afetada pelo novo valor de Early Rate.<br/>
+
+O cenário 06, é muito próximo ao cenário 04, com a inserção do recurso de Batch Normalization, manteve a boa perfomance das métricas das redes CNN Xception, VGG19 e VGG16 acima de 95%, no treino e validação, porém ainda apontou uma melhoria de perfomance das métricas para a rede CNN Resnet50. Sendo assim um candidato para realização das inferências de testes.<br/>
+
+O cenário 07 apresenta como diferença em relação ao cenário 06 somente a camada de Dropout posicionada antes da etapa de polling, e os valores das métricas das quatro redes CNN, de treino e teste não apresentaram grande variação. Sendo assim um cenário também favorável para realização de inferências de testes.<br/>
+
+Para efeito comparativo na etapa de inferência, ou seja, teste do modelo com as imagens de testes foram selecionados os modelos dos seguintes cenários:<br/>
+
+Caso de Teste 01: Avaliar o resultado dos testes da Rede Xception do cenário 04 (cenário base).
+                  Certificar de que não há overfitting.<br/>
+
+Caso de Teste 02: Comparar o resultados dos testes da Rede Resnet50 do cenário 05 com cenário 06.
+                  Avaliar o efeito da variação do Learning Rate no contexto dos cenários.<br/>
+
+Caso de Teste 03: Comparar o resultado do cenário 04 (variação i2) dos testes da Rede Resnet50 com o cenário 06.
+                  Avaliar o efeito da utilização de Batch Normalization. <br/>
+
+Caso de Teste 04: Comparar o resultado do cenário 06 dos testes da Rede VGG19 com o cenário 07.
+                  Identificar possibilidade de overffiting e avaliar o efeito da posição do Dropout no modelo.<br/>
+
+
 
 ### 4. Conclusões
 
