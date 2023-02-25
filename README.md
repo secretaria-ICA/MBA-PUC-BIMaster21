@@ -103,11 +103,11 @@ O cenário 03 foi retirado o recurso de Dropout e relizada somente uma variaçã
 CNN Xception apresentou um bom valor para as métricas, com acurácia acima de 95%, porém as outras redes (Resnet50, VGG19 e VGG16) mantiveram os
 valores próximos ao cenário 01 e 02, sendo assim não satisfatórios. <br/>
 
-** O cenário 04 o experimento foi reduzir de forma considerável o valor de Learning Rate para 0.01 e retornar com o recurso de Dropout (0.2) antes da eatapa de polling.<br/>
+O cenário 04 o experimento foi reduzir de forma considerável o valor de Learning Rate para 0.01 e retornar com o recurso de Dropout (0.2) antes da eatapa de polling.<br/>
 A métricas dos modelos CNN Xception, VGG19 e VGG16 apresentaram satisfatórios para as métricas, porém a rede Resnet50 nesse contexto apresentou grande evolução, mas não acima de 90%.<br/>
 OBS: Analisar aqui um possível overfitting da Xception.<br/>
 
-Uma variação do cenário 04 alterou a etapa de Dropout (0.2) para após a etapa de polling, mantendo o valor de Learning Rate e Early Stop. Em termos de treino
+** Uma variação do cenário 04 alterou a etapa de Dropout (0.2) para após a etapa de polling, mantendo o valor de Learning Rate e Early Stop. Em termos de treino
 e validação não foi observada uma variação considerável nas métricas dos quato modelos CNN.<br/>
 
 O cenário 05 retomou as condições do cenário 04, com um pequena variação para maior no valor de Learning Rate, de 0,01 para 0,03 e o valor de 
