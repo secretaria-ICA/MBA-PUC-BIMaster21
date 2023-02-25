@@ -67,12 +67,12 @@ Obs: Após análise das frequências de classes uma delas foi descartada por nã
 
 Os parâmetros submetidos ao estudo, em cada cenário de execução de treino, para os modelos CNN com transfer learning foram:
 
-Parâmetro         | Execução 01 | Execução 02 | Execução 03 | Execução 04 | Execução 05 | Execução 05-i2 | Execução 06 | Execução 07 | Execução 08
------------------ | ----------- | ----------- | ----------- | ----------- | ----------- | -------------- | ----------- | ----------- | :-----------
-LearningRate      | 0.5         | 0.5         | 0.1         | 0.5         | 0.01        | 0.01           | 0.03        |0.01         | 0.01          
-EarlyStop         | 50          | 50          | 50          | 50          | 50          | 25             | 25          |25           | 25          
-BatchNormalization| Não aplicado| Não aplicado| Não aplicado| Não aplicado| Não aplicado| Não aplicado   | Aplicado    |Aplicado     | Aplicado             
-Dropout           | Não aplicado| 0.2 *       | Não aplicado| 0.5 *       | 0.2 *       | 0.2 **         | 0.2 *       |0.2 *        | 0.2 **           
+Parâmetro         | Execução 01 | Execução 02 | Execução 03 | Execução 04 | Execução 04-i2 | Execução 05 | Execução 06 | Execução 07
+----------------- | ----------- | ----------- | ----------- | ----------- | -------------- | ----------- | ----------- | :-----------
+LearningRate      | 0.5         | 0.5         | 0.1         | 0.01        | 0.01           | 0.03        |0.01         | 0.01          
+EarlyStop         | 50          | 50          | 50          | 50          | 25             | 25          |25           | 25          
+BatchNormalization| Não aplicado| Não aplicado| Não aplicado| Não aplicado| Não aplicado   | Aplicado    |Aplicado     | Aplicado             
+Dropout           | Não aplicado| 0.2 *       | Não aplicado| 0.2 *       | 0.2 **         | 0.2 *       |0.2 *        | 0.2 **           
 
 Dropout inserido antes da camanda pooling (asterístico).<br/>
 Dropout inserido após a camanda pooling (asterístico duplo).<br/>
@@ -97,7 +97,7 @@ as variações envolvendo os valores de Learning Rate, Early Stop (evitar overfi
 e a inclusão ou não de Bacth Normalization. Cada cenário pode ser consultado em documento no formato pdf na pasta xxxxxxx.<br/>
 Os valores coletados referem-se a úlima época de cada execução, para efeito comparativo entre os modelos.<br/>
 Os cenários 01 e 02 não apresentaram valores satisfatórios para as métricas analisadas e uma taxa da métrica "Loss" ainda reltivamente alta, e foi
-tendo como diferença entre os dois somente a inclusão do recurso de Dropout, sem outras alterações, mantendo o valor de Eraly Rate em 0.5.<br/>
+tendo como diferença entre os dois somente a inclusão do recurso de Dropout, sem outras alterações, mantendo o valor de Learning Rate em 0.5.<br/>
 
 O cenário 03 foi retirado o recurso de Dropout e relizada somente uma variação do valor de Learning Rate de 0.5 para 0.1. Nesse contexto a Rede
 CNN Xception apresentou um bom valor para as métricas, com acurácia acima de 95%, porém as outras redes (Resnet50, VGG19 e VGG16) mantiveram os
