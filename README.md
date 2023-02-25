@@ -57,11 +57,12 @@ c) Base de dados para utilização de transfer learning: Imagenet.
 
 A estrutra padrão do modelo final a ser usado nas redes CNN, com transfer learning, foi a seguinte:
 
-Camada | Neurônios | Ativação | Otimizador | Loss                  
------- | ----------|----------| ---------- | :----------------------
-Dense1 | 128       |relu      |Adam        |categorical_crossentropy
-Dense2 | 64        |relu      |Adam        |categorical_crossentropy
-Dense3 | 3         |sofmax    |Adam        |categorical_crossentropy
+Camada | Neurônios | Ativação | Otimizador | Loss                    | Pooling                 
+------ | ----------|----------| ---------- | ----------------------  | :-----------------------
+Poolig | xxxxxxxxx | xxxxxxxx | xxxxxxxxxx | xxxxxxxxxxxxxxxxxxxxxxx | Global_average_pooling2D
+Dense1 | 128       |relu      |Adam        |categorical_crossentropy | xxxxxxxxxxxxxxxxxxxxxxxx
+Dense2 | 64        |relu      |Adam        |categorical_crossentropy | xxxxxxxxxxxxxxxxxxxxxxxx
+Dense3 | 3         |sofmax    |Adam        |categorical_crossentropy | xxxxxxxxxxxxxxxxxxxxxxxx
 
 Obs: Após análise das frequências de classes uma delas foi descartada por não conter imagens.
 
