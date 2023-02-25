@@ -121,11 +121,11 @@ OBS: Analisar aqui um possível overfitting da Xception.<br/>
 e validação não foi observada uma variação considerável nas métricas dos quato modelos CNN.<br/>
 
 O cenário 05 retomou as condições do cenário 04, com um pequena variação para maior no valor de Learning Rate, de 0,01 para 0,03 e o valor de 
-Early Stop de 50 para 25. Nesse contexto as Redes CNN Xception, VGG19 e VGG16 tiveram uma redução nos valores das métricas para treino e validação, de forma não satisfatória para superar 90%. Porém a Rede CNN Resnet50, apresentou métricas melhores do que o cenário 04, passando a marca de 90%. Ou seja essa CNN parece ter sido menos afetada pelo novo valor de Early Rate.<br/>
+Early Stop de 50 para 25. Nesse contexto as Redes CNN Xception, VGG19 e VGG16 tiveram uma redução nos valores das métricas para treino e validação, de forma não satisfatória para superar 90%. Porém a Rede CNN Resnet50, apresentou métricas melhores do que o cenário 04, passando a marca de 90%. Ou seja essa CNN parece ter sido menos afetada pelo novo valor de Learning Rate.<br/>
 
 O cenário 06, é muito próximo ao cenário 04, com a inserção do recurso de Batch Normalization, manteve a boa perfomance das métricas das redes CNN Xception, VGG19 e VGG16 acima de 95%, no treino e validação, porém ainda apontou uma melhoria de perfomance das métricas para a rede CNN Resnet50. Sendo assim um candidato para realização das inferências de testes.<br/>
 
-O cenário 07 apresenta como diferença em relação ao cenário 06 somente a camada de Dropout posicionada antes da etapa de polling, e os valores das métricas das quatro redes CNN, de treino e teste não apresentaram grande variação. Sendo assim um cenário também favorável para realização de inferências de testes.<br/>
+O cenário 07 apresenta como diferença em relação ao cenário 06 somente a camada de Dropout posicionada antes da etapa de polling, e os valores das métricas das quatro redes CNN, de treino e teste, não apresentaram grande variação. Sendo assim um cenário também favorável para realização de inferências de testes.<br/>
 
 Para efeito comparativo na etapa de inferência, ou seja, teste do modelo com as imagens de testes foram selecionados os modelos dos seguintes cenários:<br/>
 
