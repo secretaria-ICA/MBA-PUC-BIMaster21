@@ -139,7 +139,7 @@ Caso de Teste 03: Comparar o resultado do cenário 04 (variação i2) dos testes
                   Avaliar o efeito da utilização de Batch Normalization. <br/>
 
 Caso de Teste 04: Comparar o resultado do cenário 06 dos testes da Rede VGG19 com o cenário 07.
-                  Identificar possibilidade de overffiting e avaliar o efeito da posição do Dropout no modelo.<br/>
+                  Identificar possibilidade de overfitting e avaliar o efeito da posição do Dropout no modelo.<br/>
 
 
 
