@@ -52,8 +52,17 @@ O padrão de codificação facilitou a execução recursiva dos modelos e coleta
 Informações da base de dados:<br/>
 
 a) Base de dados de entrada: Imagens de folhas de classes de vegetais saudáveis ou com algum tipo de doença. Utilizado um sbconjunto de 3 classes de de imagens de folhas de Uva. Fonte original da base de dados: https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset. <br/>
-b) Total de umagens de treino: 4659 e total de imagens de validação: 1169. Para os testes de inferência foram utilizadas 10 imagens de cada classe.<br/>
-c) Base de dados para utilização de transfer learning: Imagenet.
+b) Total de imagens de treino: 4659 e total de imagens de validação: 1169. Para os testes de inferência foram utilizadas 10 imagens de cada classe.<br/>
+c) Base de dados para utilização de transfer learning: Imagenet.<br/>
+
+Estrutura das Imagens (shapes):<br/>
+
+Rede CNN | Shape Imagem | Batch Size Utilizado
+-------- | ------------ | :-------------------
+Resnet50 | 224,224,3    | 32
+Xception | 299,299,3    | 32
+VGG19    | 224,224,3    | 32
+VGG16    | 224,224,3    | 32
 
 A estrutra padrão do modelo final a ser usado nas redes CNN, com transfer learning, foi a seguinte:
 
@@ -136,9 +145,9 @@ Caso de Teste 04: Comparar o resultado do cenário 06 dos testes da Rede VGG19 c
 
 ### 4. Conclusões
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar nisl vestibulum tortor fringilla, eget imperdiet neque condimentum. Proin vitae augue in nulla vehicula porttitor sit amet quis sapien. Nam rutrum mollis ligula, et semper justo maximus accumsan. Integer scelerisque egestas arcu, ac laoreet odio aliquet at. Sed sed bibendum dolor. Vestibulum commodo sodales erat, ut placerat nulla vulputate eu. In hac habitasse platea dictumst. Cras interdum bibendum sapien a vehicula.
+Após as execuções de todos os cenários para cada modelo de rede CNN com a utilização de transfer learning, no contexto dessa base de dados de imagens, foi observado que a variação dos valores dos parâmetros, no escopo desse estudo, provacam resultados diferentes em cada modelo de rede CNN, assim como a combinação desses parâmetros em cada um dos cenários. A sensibilidade do Learning Rate deve ser sempre considerada uma vez que provocou nos cenários vistos variações consideráveis nas métricas dos modelos na etapa de Treino e validação, sendo assim o objetivo do estudo atingido.
 
-Proin feugiat nulla sem. Phasellus consequat tellus a ex aliquet, quis convallis turpis blandit. Quisque auctor condimentum justo vitae pulvinar. Donec in dictum purus. Vivamus vitae aliquam ligula, at suscipit ipsum. Quisque in dolor auctor tortor facilisis maximus. Donec dapibus leo sed tincidunt aliquam.
+Em relação aos resultados dos dos casos de testes selecionados , após a análise dos resultados...........
 
 ---
 
