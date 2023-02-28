@@ -118,7 +118,7 @@ O cenário 04 o experimento foi reduzir de forma considerável o valor de Learni
 ** Uma variação do cenário 04 alterou a etapa de Dropout (0.2) para após a etapa de polling, mantendo o valor de Learning Rate e Early Stop. Em termos de treino e validação não foi observada uma variação considerável nas métricas dos quato modelos CNN.<br/>
 
 O cenário 05 retomou as condições do cenário 04, com um pequena variação para maior no valor de Learning Rate, de 0,01 para 0,03 e o valor de 
-Early Stop de 50 para 25. Nesse contexto as Redes CNN Xception, VGG19 e VGG16 tiveram uma redução nos valores das métricas para treino e validação, de forma não satisfatória para superar a meta de 90%. Porém a Rede CNN Resnet50, apresentou métricas melhores do que o cenário 04, passando a marca de 90%. Ou seja, essa CNN parece ter sido menos afetada pelo novo valor de Learning Rate.<br/>
+Early Stop de 50 para 25. Nesse contexto as Redes CNN Xception, VGG19, Resnet50 e VGG16 tiveram uma redução nos valores das métricas para treino e validação, de forma não satisfatória para superar a meta de 90%. Assim esse cenário não foi considerado satisfatório e a variação do valor de Learning Rate confirmou a sensibilidade para os resultados dos modelos.<br/>
 
 O cenário 06, é muito próximo ao cenário 04, com a inserção do recurso de Batch Normalization, e manteve a boa perfomance das métricas das redes CNN Xception, VGG19 e VGG16 acima de 95%, no treino e validação, e ainda apontou uma melhoria de perfomance das métricas para a rede CNN Resnet50. Sendo assim um candidato para realização das inferências de testes.<br/>
 
@@ -141,7 +141,7 @@ Caso de Teste 04: Comparar o resultado do cenário 06 dos testes da Rede VGG19 c
 
 ### 4. Conclusões
 
-Após as execuções de todos os cenários para cada modelo de rede CNN com a utilização de transfer learning, no contexto dessa base de dados de imagens, foi observado que a variação dos valores dos parâmetros, no escopo desse estudo, provacam resultados diferentes em cada modelo de rede CNN, assim como a combinação desses parâmetros em cada um dos cenários. A sensibilidade do Learning Rate deve ser sempre observada, uma vez que provocou nos cenários vistos variações consideráveis nas métricas dos modelos na etapa de treino e validação, sendo assim, o observou-se que o objetivo do estudo, em seu escopo,  foi atingido.
+Após as execuções de todos os cenários para cada modelo de rede CNN com a utilização de transfer learning, no contexto dessa base de dados de imagens, foi observado que a variação dos valores dos parâmetros, no escopo desse estudo, provacam resultados diferentes em cada modelo de rede CNN, assim como a combinação desses parâmetros em cada um dos cenários. A sensibilidade do Learning Rate deve ser sempre observada, uma vez que provocou nos cenários vistos variações consideráveis nas métricas dos modelos na etapa de treino e validação, sendo assim, o observou-se que o objetivo do estudo, em seu escopo,  foi atingido. 
 
 Em relação aos resultados dos dos casos de testes selecionados , após a análise dos resultados...........
 
