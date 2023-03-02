@@ -148,6 +148,35 @@ Caso de Teste 03: Comparar o resultado do cenário 04 (variação i2) dos testes
 
 Caso de Teste 04: Comparar o resultado do cenário 06 dos testes da Rede VGG19 com o cenário 07.
                   Identificar possibilidade de overfitting e avaliar o efeito da posição do Dropout no modelo.<br/>
+                  
+ Resultado da Inferência e Testes:<br/>
+ Foram utilizadas 10 imagens de cada tipo de planta, que não estavam na base de dados de treino e validação.<br/>
+ Tabela Score: <br/>
+ Caso de Testes | Prever        |Folhas Healphy | Folhas com Black-Hot | Folhas com Black-Measles | CNN
+ -------------- | --------------| --------------| -------------------- | ------------------------ |:------------
+ 01 (cenário 04)| Healphy       | 1.00000       | 0.00000              | 0.00000                  | 
+ 01             | Black-Hot     | 0.99998       | 0.00002              | 0.00000
+ 01             | Black-Measles | 0.00000       | 0.00000              | 1.00000
+ 02 (cenário 05)| Healphy       | 0.33496       | 0.45708              | 0.20797
+ 02             | Black-Hot     | 0.33496       | 0.45708              | 0.20797
+ 02             | Black-Measles | 0.33496       | 0.45708              | 0.20797
+ 02 (cenário 06)| Healphy       | 1.00000       | 0.00000              | 0.00000
+ 02             | Black-Hot     | 0.00000       | 0.01496              | 0.98504
+ 02             | Black-Measles | 0.00000       | 0.07631              | 0.92369
+ 03 (cen. 04-i2)| Healphy       | 0.99975       | 0.00022              | 0.00003
+ 03             | Black-Hot     | 0.00003       | 0.35394              | 0.64603
+ 03             | Black-Measles | 0.00001       | 0.20186              | 0.79813
+ 04 (cenário 06)| Healphy       | 0.xxxxx       | 0.xxxxx              | 0.xxxxx
+ 04             | Black-Hot     | 0.xxxxx       | 0.xxxxx              | 0.xxxxx
+ 04             | Black-Measles | 0.xxxxx       | 0.xxxxx              | 0.xxxxx
+ 04 (cenário 07)| Healphy       | 0.xxxxx       | 0.xxxxx              | 0.xxxxx
+ 04             | Black-Hot     | 0.xxxxx       | 0.xxxxx              | 0.xxxxx
+ 04             | Black-Measles | 0.xxxxx       | 0.xxxxx              | 0.xxxxx
+ 
+ 
+ 
+  
+ 
 
 
 ### 4. Conclusões
