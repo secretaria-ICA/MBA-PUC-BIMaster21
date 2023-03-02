@@ -150,7 +150,7 @@ Caso de Teste 04: Comparar o resultado do cenário 06 dos testes da Rede VGG19 c
                   Identificar possibilidade de overfitting e avaliar o efeito da posição do Dropout no modelo.<br/>
                   
  Resultado da Inferência e Testes:<br/>
- Foram utilizadas 10 imagens de cada tipo de planta, que não estavam na base de dados de treino e validação.<br/>
+ Foram utilizadas 10 imagens de cada tipo de estado da folha, que não estavam na base de dados de treino e validação.<br/>
  Tabela Score: <br/>
  Caso de Testes | Prever        |Folhas Healphy | Folhas com Black-Hot | Folhas com Black-Measles | CNN
  -------------- | --------------| --------------| -------------------- | ------------------------ |:------------
