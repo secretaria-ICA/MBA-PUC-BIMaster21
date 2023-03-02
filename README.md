@@ -116,6 +116,9 @@ https://wandb.ai/authors/ayusht/reports/Batch-Normalization-in-Keras-An-Example-
 
 A coleta de resultados foi realizada após a execução dos códigos python, de cada cenário de Treino e Validação, considerando
 as variações envolvendo os valores de Learning Rate, Early Stop (evitar overfitting), inclusão ou não de Dropout(reduzir efeito de overfiting em CNN profundas), antes ou depois da etapa de polling,e a inclusão ou não de Bacth Normalization (analisar a relação com Learning Rate e melhorar a generalização). Cada cenário pode ser consultado em documento no formato pdf na pasta Coleta de Resultados (https://github.com/mpr3735/MBA-PUC-BIMaster21/tree/main/Coleta%20de%20Resultados).<br/>
+
+Resultado da Execução do Terino e Validação: <br/>
+
 Os valores coletados referem-se a úlima época de cada execução, para efeito comparativo entre os modelos.<br/>
 Os cenários 01 e 02 não apresentaram valores satisfatórios para as métricas analisadas e uma taxa da métrica "Loss" ainda relativamente alta, e foi
 estabelecida a diferença entre os dois, somente com a inclusão do recurso de Dropout, sem outras alterações, mantendo o valor de Learning Rate em 0.5.<br/>
