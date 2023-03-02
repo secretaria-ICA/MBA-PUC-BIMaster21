@@ -47,7 +47,7 @@ A codificaçãa de notebooks python, para cada modelo CNN, contém as seguintes 
 O padrão de codificação facilitou a execução recursiva dos modelos e coleta das informação nos sete cenários. 
 Informações da base de dados:<br/>
 
-a) Base de dados de entrada: Imagens de folhas de classes de vegetais saudáveis ou com algum tipo de doença. Utilizado um suconjunto de 3 classes de de imagens de folhas de Uva. Fonte original da base de dados: https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset. <br/>
+a) Base de dados de entrada: Imagens de folhas de classes de vegetais saudáveis ou com algum tipo de doença. Utilizado um suconjunto de 3 classes de de imagens de folhas de Uva. Fonte original da base de dados: (https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset). <br/>
 b) Total de imagens de treino: 4659 e total de imagens de validação: 1169. Para os testes de inferência foram utilizadas 10 imagens de cada classe.<br/>
 c) Base de dados para utilização de transfer learning: Imagenet.<br/>
 
