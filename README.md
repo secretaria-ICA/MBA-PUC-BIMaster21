@@ -158,8 +158,8 @@ Caso de Teste 04: Comparar o resultado do cenário 06 dos testes da Rede VGG19 c
  Caso de Testes | Prever        |Folhas Healphy | Folhas com Black-Hot | Folhas com Black-Measles | CNN
  -------------- | --------------| --------------| -------------------- | ------------------------ |:------------
  01 (cenário 04)| Black-Measles | 0.00000       | 0.00000              | 1.00000                  | Xception
- 01             | Healphy       | 1.00000       | 0.00000              | 0.00000                  | Xception
- 01             | Black-Hot     | 0.00000       | 0.99998              | 0.00002                  | Xception
+ 01             | Healphy       | 1.00000       | 0.00000              | 0.00000                  | 
+ 01             | Black-Hot     | 0.00000       | 0.99998              | 0.00002                  | 
  02 (cenário 05)| Healphy       | 0.33496       | 0.45708              | 0.20797                  | Resnet50
  02             | Black-Hot     | 0.33496       | 0.45708              | 0.20797                  | 
  02             | Black-Measles | 0.33496       | 0.45708              | 0.20797                  | 
