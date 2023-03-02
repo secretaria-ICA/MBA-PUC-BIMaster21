@@ -103,7 +103,7 @@ Obs: Para ponto de corte na coleta dos valores das métricas no estudo comparati
 ### 3. Resultados
 
 A coleta de resultados foi realizada após a execução dos códigos python, de cada cenário de Treino e Validação, considerando
-as variações envolvendo os valores de Learning Rate, Early Stop (evitar overfitting), inclusão ou não de Dropout, antes ou depois da etapa de polling,
+as variações envolvendo os valores de Learning Rate, Early Stop (evitar overfitting), inclusão ou não de Dropout(reduzir efeito de overfiting em CNN profundas), antes ou depois da etapa de polling,
 e a inclusão ou não de Bacth Normalization. Cada cenário pode ser consultado em documento no formato pdf na pasta Coleta de Resultados (https://github.com/mpr3735/MBA-PUC-BIMaster21/tree/main/Coleta%20de%20Resultados).<br/>
 Os valores coletados referem-se a úlima época de cada execução, para efeito comparativo entre os modelos.<br/>
 Os cenários 01 e 02 não apresentaram valores satisfatórios para as métricas analisadas e uma taxa da métrica "Loss" ainda relativamente alta, e foi
