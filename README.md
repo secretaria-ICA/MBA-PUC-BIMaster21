@@ -122,14 +122,14 @@ estabelecida a diferença entre os dois, somente com a inclusão do recurso de D
 
 O cenário 03 foi retirado o recurso de Dropout e relizada somente uma variação do valor de Learning Rate de 0.5 para 0.1. Nesse contexto a Rede
 CNN Xception apresentou um bom valor para as métricas, com acurácia acima de 95%, porém as outras redes (Resnet50, VGG19 e VGG16) mantiveram os
-valores próximos ao cenário 01 e 02, sendo assim sendo classificados como não satisfatórios. <br/>
+valores próximos ao cenário 01 e 02, assim sendo classificados como não satisfatórios. <br/>
 
-O cenário 04 o experimento foi reduzir de forma considerável o valor de Learning Rate para 0.01 e retornar com o recurso de Dropout (0.2), antes da eatapa de polling.A métricas dos modelos CNN Xception, VGG19 e VGG16 apresentaram valores satisfatórios para as métricas, porém a rede Resnet50, nesse contexto, apresentou grande evolução, mas não acima de 90%.<br/>
+O cenário 04 o experimento foi reduzir de forma considerável o valor de Learning Rate para 0.01 e retornar com o recurso de Dropout (0.2), antes da etapa de polling.A métricas dos modelos CNN Xception, VGG19 e VGG16 apresentaram valores satisfatórios para as métricas, porém a rede Resnet50, nesse contexto, apresentou grande evolução, mas não acima de 90%.<br/>
 
 ** Uma variação do cenário 04 (04-i2) alterou a etapa de Dropout (0.2) para após a etapa de polling, mantendo o valor de Learning Rate e Early Stop. Em termos de treino e validação não foi observada uma variação considerável nas métricas dos quato modelos CNN.<br/>
 
 O cenário 05 retomou as condições do cenário 04, com um pequena variação para maior no valor de Learning Rate, de 0,01 para 0,03 e o valor de 
-Early Stop de 50 para 25. Nesse contexto as Redes CNN Xception, VGG19, Resnet50 e VGG16 tiveram uma redução nos valores das métricas para treino e validação, de forma não satisfatória para superar a meta de 90%. Assim esse cenário não foi considerado satisfatório e a variação do valor de Learning Rate confirmou a sensibilidade para os resultados dos modelos.<br/>
+Early Stop de 50 para 25. Nesse contexto as Redes CNN Xception, VGG19, Resnet50 e VGG16 tiveram uma redução nos valores das métricas para treino e validação, de forma não satisfatória para superar a meta de 90%. Assim esse cenário não foi considerado satisfatório e a variação do valor de Learning Rate confirmou a sensibilidade para os resultados dos modelos. Uma outra possível variação desse cenário poderia ser incluir uma etapa de Batch Normalization, uma vez que houve um aumento do valor de Learning Rate e observar o resultado dessa modificação.<br/>
 
 O cenário 06, é muito próximo ao cenário 04, com a inserção do recurso de Batch Normalization, com um valor reduzido para Learning Rate (0,01), e manteve a boa perfomance das métricas das redes CNN Xception, VGG19 e VGG16 acima de 95%, no treino e validação, e ainda apontou uma melhoria de perfomance das métricas para a rede CNN Resnet50. O números de épocas executadas reduziu para os quatro modelos de rede CNN, com Batch Normalization. Não foi observada uma relação direta entre o dois cenários em relação ao tempo de execução de cada rede CNN, mas para a Resnet50 houve uma redução. Sendo assim um candidato para realização das inferências de testes.<br/>
 
@@ -152,9 +152,9 @@ Caso de Teste 04: Comparar o resultado do cenário 06 dos testes da Rede VGG19 c
 
 ### 4. Conclusões
 
-Após as execuções de todos os cenários para cada modelo de rede CNN com a utilização de transfer learning, no contexto dessa base de dados de imagens, foi observado que a variação dos valores dos parâmetros, no escopo desse estudo, provacam resultados diferentes em cada modelo de rede CNN, assim como a combinação desses parâmetros em cada um dos cenários. A sensibilidade do Learning Rate deve ser sempre observada, uma vez que provocou nos cenários vistos variações consideráveis nas métricas dos modelos na etapa de treino e validação, sendo assim, observou-se que o objetivo do estudo, em seu escopo,  foi atingido. 
+Após as execuções de todos os cenários para cada modelo de rede CNN com a utilização de transfer learning, no contexto dessa base de dados de imagens, foi observado que a variação dos valores dos parâmetros, no escopo desse estudo, provacam resultados diferentes (exemplo na coleta de resultados do cenário 03) em cada modelo de rede CNN, assim como a combinação desses parâmetros em cada um dos cenários. A sensibilidade do Learning Rate deve ser sempre observada, uma vez que foi a que mais provocou variações consideráveis nas métricas dos modelos na etapa de treino e validação, quando aplicado em valores reduzidos, sendo assim, observou-se que o objetivo do estudo, em seu escopo,  foi atingido. 
 
-Em relação aos resultados dos dos casos de testes selecionados , após a análise dos resultados...........
+Em relação aos resultados dos dos casos de testes selecionados , após a execução de cada ibferência/teste, a análise dos resultados .. ...........
 
 ---
 
