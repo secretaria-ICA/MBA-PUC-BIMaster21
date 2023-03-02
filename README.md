@@ -159,7 +159,7 @@ Caso de Teste 04: Comparar o resultado do cenário 06 dos testes da Rede VGG19 c
  -------------- | --------------| --------------| -------------------- | ------------------------ |:------------
  01             | Black-Measles | 0.00000       | 0.00000              | 1.00000                  | Xception
  01             | Healphy       | 1.00000       | 0.00000              | 0.00000                  | Xception
- 01             | Black-Hit     | 0.00000       | 0.99998              | 0.00002                  | Xception
+ 01             | Black-Hot     | 0.00000       | 0.99998              | 0.00002                  | Xception
  02 (cenário 05)| Healphy       | 0.33496       | 0.45708              | 0.20797                  | Resnet50
  02             | Black-Hot     | 0.33496       | 0.45708              | 0.20797                  | 
  02             | Black-Measles | 0.33496       | 0.45708              | 0.20797                  | 
