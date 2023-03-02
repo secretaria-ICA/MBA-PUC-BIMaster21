@@ -99,7 +99,7 @@ auc      | val_auc
 
 Obs: Para ponto de corte na coleta dos valores das métricas no estudo comparativo foi considerada uma acurácia acima de 90%, durante o treino.
 
-Fontes de Consulta:
+Fontes de Consulta:<br/>
 https://keras.io/applications/ <br/>
 https://www.tensorflow.org/tutorials/load_data/images <br/>
 https://www.tensorflow.org/api_docs/python/tf/keras/utils/image_dataset_from_directory <br/>
@@ -126,7 +126,7 @@ valores próximos ao cenário 01 e 02, sendo assim sendo classificados como não
 
 O cenário 04 o experimento foi reduzir de forma considerável o valor de Learning Rate para 0.01 e retornar com o recurso de Dropout (0.2), antes da eatapa de polling.A métricas dos modelos CNN Xception, VGG19 e VGG16 apresentaram valores satisfatórios para as métricas, porém a rede Resnet50, nesse contexto, apresentou grande evolução, mas não acima de 90%.<br/>
 
-** Uma variação do cenário 04 alterou a etapa de Dropout (0.2) para após a etapa de polling, mantendo o valor de Learning Rate e Early Stop. Em termos de treino e validação não foi observada uma variação considerável nas métricas dos quato modelos CNN.<br/>
+** Uma variação do cenário 04 (04-i2) alterou a etapa de Dropout (0.2) para após a etapa de polling, mantendo o valor de Learning Rate e Early Stop. Em termos de treino e validação não foi observada uma variação considerável nas métricas dos quato modelos CNN.<br/>
 
 O cenário 05 retomou as condições do cenário 04, com um pequena variação para maior no valor de Learning Rate, de 0,01 para 0,03 e o valor de 
 Early Stop de 50 para 25. Nesse contexto as Redes CNN Xception, VGG19, Resnet50 e VGG16 tiveram uma redução nos valores das métricas para treino e validação, de forma não satisfatória para superar a meta de 90%. Assim esse cenário não foi considerado satisfatório e a variação do valor de Learning Rate confirmou a sensibilidade para os resultados dos modelos.<br/>
