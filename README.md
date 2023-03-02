@@ -141,7 +141,7 @@ Caso de Teste 04: Comparar o resultado do cenário 06 dos testes da Rede VGG19 c
 
 ### 4. Conclusões
 
-Após as execuções de todos os cenários para cada modelo de rede CNN com a utilização de transfer learning, no contexto dessa base de dados de imagens, foi observado que a variação dos valores dos parâmetros, no escopo desse estudo, provacam resultados diferentes em cada modelo de rede CNN, assim como a combinação desses parâmetros em cada um dos cenários. A sensibilidade do Learning Rate deve ser sempre observada, uma vez que provocou nos cenários vistos variações consideráveis nas métricas dos modelos na etapa de treino e validação, sendo assim, o observou-se que o objetivo do estudo, em seu escopo,  foi atingido. 
+Após as execuções de todos os cenários para cada modelo de rede CNN com a utilização de transfer learning, no contexto dessa base de dados de imagens, foi observado que a variação dos valores dos parâmetros, no escopo desse estudo, provacam resultados diferentes em cada modelo de rede CNN, assim como a combinação desses parâmetros em cada um dos cenários. A sensibilidade do Learning Rate deve ser sempre observada, uma vez que provocou nos cenários vistos variações consideráveis nas métricas dos modelos na etapa de treino e validação, sendo assim, observou-se que o objetivo do estudo, em seu escopo,  foi atingido. 
 
 Em relação aos resultados dos dos casos de testes selecionados , após a análise dos resultados...........
 
