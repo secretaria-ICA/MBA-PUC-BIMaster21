@@ -154,24 +154,22 @@ Caso de Teste 04: Comparar o resultado do cenário 06 dos testes da Rede VGG19 c
  Tabela Score: <br/>
  Caso de Testes | Prever        |Folhas Healphy | Folhas com Black-Hot | Folhas com Black-Measles | CNN
  -------------- | --------------| --------------| -------------------- | ------------------------ |:------------
- 01 (cenário 04)| Healphy       | 1.00000       | 0.00000              | 0.00000                  | 
- 01             | Black-Hot     | 0.99998       | 0.00002              | 0.00000
- 01             | Black-Measles | 0.00000       | 0.00000              | 1.00000
- 02 (cenário 05)| Healphy       | 0.33496       | 0.45708              | 0.20797
- 02             | Black-Hot     | 0.33496       | 0.45708              | 0.20797
- 02             | Black-Measles | 0.33496       | 0.45708              | 0.20797
- 02 (cenário 06)| Healphy       | 1.00000       | 0.00000              | 0.00000
- 02             | Black-Hot     | 0.00000       | 0.01496              | 0.98504
- 02             | Black-Measles | 0.00000       | 0.07631              | 0.92369
- 03 (cen. 04-i2)| Healphy       | 0.99975       | 0.00022              | 0.00003
- 03             | Black-Hot     | 0.00003       | 0.35394              | 0.64603
- 03             | Black-Measles | 0.00001       | 0.20186              | 0.79813
- 04 (cenário 06)| Healphy       | 0.xxxxx       | 0.xxxxx              | 0.xxxxx
- 04             | Black-Hot     | 0.xxxxx       | 0.xxxxx              | 0.xxxxx
- 04             | Black-Measles | 0.xxxxx       | 0.xxxxx              | 0.xxxxx
- 04 (cenário 07)| Healphy       | 0.xxxxx       | 0.xxxxx              | 0.xxxxx
- 04             | Black-Hot     | 0.xxxxx       | 0.xxxxx              | 0.xxxxx
- 04             | Black-Measles | 0.xxxxx       | 0.xxxxx              | 0.xxxxx
+ 01             | Black-Measles | 0.00000       | 0.00000              | 1.00000                  | Xception
+ 02 (cenário 05)| Healphy       | 0.33496       | 0.45708              | 0.20797                  | Resnet50
+ 02             | Black-Hot     | 0.33496       | 0.45708              | 0.20797                  | 
+ 02             | Black-Measles | 0.33496       | 0.45708              | 0.20797                  | 
+ 02 (cenário 06)| Healphy       | 1.00000       | 0.00000              | 0.00000                  | Resnet50
+ 02             | Black-Hot     | 0.00000       | 0.01496              | 0.98504                  | 
+ 02             | Black-Measles | 0.00000       | 0.07631              | 0.92369                  | 
+ 03 (cen. 04-i2)| Healphy       | 0.99975       | 0.00022              | 0.00003                  | Resnet50
+ 03             | Black-Hot     | 0.00003       | 0.35394              | 0.64603                  | 
+ 03             | Black-Measles | 0.00001       | 0.20186              | 0.79813                  | 
+ 04 (cenário 06)| Healphy       | 0.xxxxx       | 0.xxxxx              | 0.xxxxx                  | VGG19
+ 04             | Black-Hot     | 0.xxxxx       | 0.xxxxx              | 0.xxxxx                  | 
+ 04             | Black-Measles | 0.xxxxx       | 0.xxxxx              | 0.xxxxx                  | 
+ 04 (cenário 07)| Healphy       | 0.xxxxx       | 0.xxxxx              | 0.xxxxx                  | VGG19
+ 04             | Black-Hot     | 0.xxxxx       | 0.xxxxx              | 0.xxxxx                  | 
+ 04             | Black-Measles | 0.xxxxx       | 0.xxxxx              | 0.xxxxx                  | 
  
  
  
