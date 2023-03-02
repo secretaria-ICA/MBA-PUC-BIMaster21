@@ -77,7 +77,7 @@ Obs: Após análise das frequências de classes uma delas foi descartada por nã
 
 Os parâmetros submetidos ao estudo, em cada cenário de execução de treino, para os modelos CNN com transfer learning foram:
 
-Parâmetro         | Execução 01 | Execução 02 | Execução 03 | Execução 04 | Execução 04-i2 | Execução 05 | Execução 06 | Execução 07
+Parâmetro         | Execução 01| Execução 02 | Execução 03 | Execução 04 | Execução 04-i2 | Execução 05 | Execução 06 | Execução 07
 ----------------- | ----------- | ----------- | ----------- | ----------- | -------------- | ----------- | ----------- | :-----------
 LearningRate      | 0.5         | 0.5         | 0.1         | 0.01        | 0.01           | 0.03        |0.01         | 0.01          
 EarlyStop         | 50          | 50          | 50          | 50          | 25             | 25          |25           | 25          
