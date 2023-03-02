@@ -2,22 +2,19 @@
 # Classificação de Imagens com Transfer Learning
 
 #### Aluno: [Mauricio Pereira Rangel](https://github.com/link_do_github)
-#### Orientador: [Felipe Borges](https://github.com/FelipeBorgesC) e [Nome Sobrenome](https://github.com/link_do_github).
-#### Co-orientador(/a/es/as): [Nome Sobrenome](https://github.com/link_do_github) e [Nome Sobrenome](https://github.com/link_do_github). <!-- caso não aplicável, remover esta linha -->
+#### Orientador: [Felipe Borges](https://github.com/FelipeBorgesC).
+#### Co-orientador(/a/es/as): [Manoela Kohler](https://github.com/link_do_github) 
 
----
+
 
 Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como pré-requisito para conclusão de curso e obtenção de crédito na disciplina "Projetos de Sistemas Inteligentes de Apoio à Decisão".
 
 <!-- para os links a seguir, caso os arquivos estejam no mesmo repositório que este README, não há necessidade de incluir o link completo: basta incluir o nome do arquivo, com extensão, que o GitHub completa o link corretamente -->
 - [Link para o código](https://github.com/link_do_repositorio). <!-- caso não aplicável, remover esta linha -->
 
-- [Link para a monografia](https://link_da_monografia.com). <!-- caso não aplicável, remover esta linha -->
-
 - Trabalhos relacionados: <!-- caso não aplicável, remover estas linhas -->
-    - [Nome do Trabalho 1](https://link_do_trabalho.com).
-    - [Nome do Trabalho 2](https://link_do_trabalho.com).
-
+    - [Base de Dados Kaggle](https://www.kaggle.com/code/aryanml007/plant-disease-resnet50/notebook).
+   
 ---
 
 ### Resumo
@@ -98,19 +95,6 @@ auc      | val_auc
 
 Obs: Para ponto de corte na coleta dos valores das métricas no estudo comparativo foi considerada uma acurácia acima de 90%, durante o treino.
 
-Fontes de Consulta:<br/>
-https://keras.io/applications/ <br/>
-https://www.tensorflow.org/tutorials/load_data/images <br/>
-https://www.tensorflow.org/api_docs/python/tf/keras/utils/image_dataset_from_directory <br/>
-https://keras.io/api/data_loading/ <br/>
-https://www.deeplearningbook.com.br/capitulo-23-como-funciona-o-dropout/ <br/>
-https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dropout <br/>
-https://keras.io/guides/transfer_learning/ <br/>
-https://www.deeplearningbook.com.br/?s=cap%C3%ADtulo+26 <br/>
-https://towardsdatascience.com/intuition-behind-log-loss-score-4e0c9979680a <br/>
-https://wandb.ai/authors/ayusht/reports/Batch-Normalization-in-Keras-An-Example--VmlldzoxNzI5NjQ <br/>
-
-
 ### 3. Resultados
 
 A coleta de resultados foi realizada após a execução dos códigos python, de cada cenário de Treino e Validação, considerando
@@ -176,16 +160,16 @@ Caso de Teste 04: Comparar o resultado do cenário 06 dos testes da Rede VGG19 c
  04             | Black-Measles | 0.xxxxx       | 0.xxxxx              | 0.xxxxx                  | 
  
  
- 
-  
- 
-
 
 ### 4. Conclusões
 
 Após as execuções de todos os cenários para cada modelo de rede CNN com a utilização de transfer learning, no contexto dessa base de dados de imagens, foi observado que a variação dos valores dos parâmetros, no escopo desse estudo, provacam resultados diferentes (exemplo na coleta de resultados do cenário 03) em cada modelo de rede CNN, assim como a combinação desses parâmetros em cada um dos cenários. A sensibilidade do Learning Rate deve ser sempre observada, uma vez que foi a que mais provocou variações consideráveis nas métricas dos modelos na etapa de treino e validação, quando aplicado em valores reduzidos, sendo assim, observou-se que o objetivo do estudo, em seu escopo,  foi atingido. 
 
-Em relação aos resultados dos dos casos de testes selecionados , após a execução de cada ibferência/teste, a análise dos resultados .. ...........
+Em relação aos resultados dos dos casos de testes selecionados , após a execução de cada teste verificou-se que o cenário 04 no caso de teste 01 não presentou overfitting , pois o modelo conseguiu classificar bem as imagens de testes. No caso de teste 02 o cenário 06 para a CNN Resnet conseguiu uma melhor classificação, porém com dificuldades para classificar as classes Black-Hot e Black-Measles, e nesse caso uma opção poderia ser aplicar data augmentation na classe Black-Hot e observar o resultado. O mesmo caso ocorre com o cenário 04-i2, pois a classe Healphy obteve bom resultado, mas a classe Black-Hot parace ser classificada como Black-Measle.<br/>
+O caso de teste 03 no cenário 04-i2 distribuiu melhor a classificação entrea as classes Black-Hot e Black-Measle, mas ainda persistindo o problema do caso de teste 02, e como opçao a aplicação de data augmentation nessas duas classes pode ser uma opção para melhorar a taxa de acerto nos testes.<br/>
+
+
+
 
 ---
 
