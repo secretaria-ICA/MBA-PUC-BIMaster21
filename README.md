@@ -99,11 +99,23 @@ auc      | val_auc
 
 Obs: Para ponto de corte na coleta dos valores das métricas no estudo comparativo foi considerada uma acurácia acima de 90%, durante o treino.
 
+Fontes de Consulta:
+https://keras.io/applications/ <br/>
+https://www.tensorflow.org/tutorials/load_data/images <br/>
+https://www.tensorflow.org/api_docs/python/tf/keras/utils/image_dataset_from_directory <br/>
+https://keras.io/api/data_loading/ <br/>
+https://www.deeplearningbook.com.br/capitulo-23-como-funciona-o-dropout/ <br/>
+https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dropout <br/>
+https://keras.io/guides/transfer_learning/ <br/>
+https://www.deeplearningbook.com.br/?s=cap%C3%ADtulo+26 <br/>
+https://towardsdatascience.com/intuition-behind-log-loss-score-4e0c9979680a <br/>
+https://wandb.ai/authors/ayusht/reports/Batch-Normalization-in-Keras-An-Example--VmlldzoxNzI5NjQ <br/>
+
 
 ### 3. Resultados
 
 A coleta de resultados foi realizada após a execução dos códigos python, de cada cenário de Treino e Validação, considerando
-as variações envolvendo os valores de Learning Rate, Early Stop (evitar overfitting), inclusão ou não de Dropout(reduzir efeito de overfiting em CNN profundas), antes ou depois da etapa de polling,e a inclusão ou não de Bacth Normalization. Cada cenário pode ser consultado em documento no formato pdf na pasta Coleta de Resultados (https://github.com/mpr3735/MBA-PUC-BIMaster21/tree/main/Coleta%20de%20Resultados).<br/>
+as variações envolvendo os valores de Learning Rate, Early Stop (evitar overfitting), inclusão ou não de Dropout(reduzir efeito de overfiting em CNN profundas), antes ou depois da etapa de polling,e a inclusão ou não de Bacth Normalization (analisar a relação com Learning Rate e melhorar a generalização). Cada cenário pode ser consultado em documento no formato pdf na pasta Coleta de Resultados (https://github.com/mpr3735/MBA-PUC-BIMaster21/tree/main/Coleta%20de%20Resultados).<br/>
 Os valores coletados referem-se a úlima época de cada execução, para efeito comparativo entre os modelos.<br/>
 Os cenários 01 e 02 não apresentaram valores satisfatórios para as métricas analisadas e uma taxa da métrica "Loss" ainda relativamente alta, e foi
 estabelecida a diferença entre os dois, somente com a inclusão do recurso de Dropout, sem outras alterações, mantendo o valor de Learning Rate em 0.5.<br/>
@@ -119,7 +131,7 @@ O cenário 04 o experimento foi reduzir de forma considerável o valor de Learni
 O cenário 05 retomou as condições do cenário 04, com um pequena variação para maior no valor de Learning Rate, de 0,01 para 0,03 e o valor de 
 Early Stop de 50 para 25. Nesse contexto as Redes CNN Xception, VGG19, Resnet50 e VGG16 tiveram uma redução nos valores das métricas para treino e validação, de forma não satisfatória para superar a meta de 90%. Assim esse cenário não foi considerado satisfatório e a variação do valor de Learning Rate confirmou a sensibilidade para os resultados dos modelos.<br/>
 
-O cenário 06, é muito próximo ao cenário 04, com a inserção do recurso de Batch Normalization, e manteve a boa perfomance das métricas das redes CNN Xception, VGG19 e VGG16 acima de 95%, no treino e validação, e ainda apontou uma melhoria de perfomance das métricas para a rede CNN Resnet50. Sendo assim um candidato para realização das inferências de testes.<br/>
+O cenário 06, é muito próximo ao cenário 04, com a inserção do recurso de Batch Normalization, com um valor reduzido para Learning Rate (0,01), e manteve a boa perfomance das métricas das redes CNN Xception, VGG19 e VGG16 acima de 95%, no treino e validação, e ainda apontou uma melhoria de perfomance das métricas para a rede CNN Resnet50. O números de épocas executadas reduziu para os quatro modelos de rede CNN, com Batch Normalization. Não foi observada uma relação direta entre o dois cenários em relação ao tempo de execução de cada rede CNN, mas para a Resnet50 houve uma redução. Sendo assim um candidato para realização das inferências de testes.<br/>
 
 O cenário 07 apresenta como diferença, em relação ao cenário 06, somente a camada de Dropout posicionada antes da etapa de polling, e os valores das métricas das quatro redes CNN, de treino e validação não apresentaram grande variação. Sendo assim um cenário também favorável para realização de inferências de testes.<br/>
 
