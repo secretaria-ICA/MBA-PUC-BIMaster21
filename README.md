@@ -163,8 +163,7 @@ Em relação aos resultados dos dos casos de testes selecionados , após a execu
 
 O caso de teste 03 no cenário 04-i2 distribuiu melhor a classificação entrea as classes Black-Hot e Black-Measle, mas ainda persistindo o problema do caso de teste 02, e como opçao a aplicação de data augmentation nessas duas classes pode ser uma opção para melhorar a taxa de acerto nos testes.<br/>
 
-
-
+O caso de uso 04 o modelo conseguiu classificar o que é doença ou não, como nos cenários anteriores, mas ainda persistiu a dificuldade para classificar o tipo de doença, não sendo observada alguma alteração em função da camada Dropout. 
 
 ---
 
