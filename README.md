@@ -10,10 +10,10 @@
 Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como pré-requisito para conclusão de curso e obtenção de crédito na disciplina "Projetos de Sistemas Inteligentes de Apoio à Decisão".
 
 <!-- para os links a seguir, caso os arquivos estejam no mesmo repositório que este README, não há necessidade de incluir o link completo: basta incluir o nome do arquivo, com extensão, que o GitHub completa o link corretamente -->
-- [Link para o código](https://github.com/link_do_repositorio). <!-- caso não aplicável, remover esta linha -->
+- [Link para o código](https://github.com/mpr3735/MBA-PUC-BIMaster21/tree/main/Infer%C3%AAncia-Testes). <!-- caso não aplicável, remover esta linha -->
 
 - Trabalhos relacionados: <!-- caso não aplicável, remover estas linhas -->
-    - [Base de Dados Kaggle](https://www.kaggle.com/code/aryanml007/plant-disease-resnet50/notebook).
+    - [Base dados Kaggle](https://www.kaggle.com/code/aryanml007/plant-disease-resnet50/notebook).
    
 ---
 
@@ -25,13 +25,7 @@ O presente estudo tem como escopo a análise comparativa da aplicação do conce
 
 ### Abstract <!-- Opcional! Caso não aplicável, remover esta seção -->
 
-<!-- trocar o texto abaixo pelo resumo do trabalho, em inglês -->
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar nisl vestibulum tortor fringilla, eget imperdiet neque condimentum. Proin vitae augue in nulla vehicula porttitor sit amet quis sapien. Nam rutrum mollis ligula, et semper justo maximus accumsan. Integer scelerisque egestas arcu, ac laoreet odio aliquet at. Sed sed bibendum dolor. Vestibulum commodo sodales erat, ut placerat nulla vulputate eu. In hac habitasse platea dictumst. Cras interdum bibendum sapien a vehicula.
-
-Proin feugiat nulla sem. Phasellus consequat tellus a ex aliquet, quis convallis turpis blandit. Quisque auctor condimentum justo vitae pulvinar. Donec in dictum purus. Vivamus vitae aliquam ligula, at suscipit ipsum. Quisque in dolor auctor tortor facilisis maximus. Donec dapibus leo sed tincidunt aliquam.
-
-Donec molestie, ante quis tempus consequat, mauris ante fringilla elit, euismod hendrerit leo erat et felis. Mauris faucibus odio est, non sagittis urna maximus ut. Suspendisse blandit ligula pellentesque tincidunt malesuada. Sed at ornare ligula, et aliquam dui. Cras a lectus id turpis accumsan pellentesque ut eget metus. Pellentesque rhoncus pellentesque est et viverra. Pellentesque non risus velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+The current study has the aim  at analysing the comparative implementation of the concept of the learning transfer technique, in   image classification in the four different CNN models. The objective is to use a pattern of structure in each layer of the cnn networks, being analysed, and change a group of  specific parameters in order to assess the impact on the result of each execution of the CNN network model. Furthermore, identify if there is relevance or not, in each of these variations in the collected results and consider an ideal cutoff for the values of the measure of training and validation. This study  does not focus on achieving the maximum performance  in the result of each model.
 
 ### 1. Introdução
 
