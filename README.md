@@ -167,7 +167,7 @@ O caso de uso 04 o modelo conseguiu classificar o que é doença ou não, como n
 
 ---
 
-Matrícula: 123.456.789
+Matrícula: 211.100.470
 
 Pontifícia Universidade Católica do Rio de Janeiro
 
