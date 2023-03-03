@@ -146,12 +146,12 @@ Caso de Teste 04: Comparar o resultado do cenário 06 dos testes da Rede VGG19 c
  03 (cen. 04-i2)| Healphy       | 0.99975       | 0.00022              | 0.00003                  | Resnet50
  03             | Black-Hot     | 0.00003       | 0.35394              | 0.64603                  | 
  03             | Black-Measles | 0.00001       | 0.20186              | 0.79813                  | 
- 04 (cenário 06)| Healphy       | 0.xxxxx       | 0.xxxxx              | 0.xxxxx                  | VGG19
- 04             | Black-Hot     | 0.xxxxx       | 0.xxxxx              | 0.xxxxx                  | 
- 04             | Black-Measles | 0.xxxxx       | 0.xxxxx              | 0.xxxxx                  | 
- 04 (cenário 07)| Healphy       | 0.xxxxx       | 0.xxxxx              | 0.xxxxx                  | VGG19
- 04             | Black-Hot     | 0.xxxxx       | 0.xxxxx              | 0.xxxxx                  | 
- 04             | Black-Measles | 0.xxxxx       | 0.xxxxx              | 0.xxxxx                  | 
+ 04 (cenário 06)| Healphy       | 1.00000       | 0.00000              | 0.00000                  | VGG19
+ 04             | Black-Hot     | 0.00000       | 0.00006              | 0.99994                  | 
+ 04             | Black-Measles | 0.00000       | 0.00000              | 1.00000                  | 
+ 04 (cenário 07)| Healphy       | 1.00000       | 0.00000              | 0.00000                  | VGG19
+ 04             | Black-Hot     | 0.02010       | 0.58840              | 0.39149                  | 
+ 04             | Black-Measles | 0.00000       | 0.00001              | 0.99999                  | 
  
  
 
@@ -160,6 +160,7 @@ Caso de Teste 04: Comparar o resultado do cenário 06 dos testes da Rede VGG19 c
 Após as execuções de todos os cenários para cada modelo de rede CNN com a utilização de transfer learning, no contexto dessa base de dados de imagens, foi observado que a variação dos valores dos parâmetros, no escopo desse estudo, provacam resultados diferentes (exemplo na coleta de resultados do cenário 03) em cada modelo de rede CNN, assim como a combinação desses parâmetros em cada um dos cenários. A sensibilidade do Learning Rate deve ser sempre observada, uma vez que foi a que mais provocou variações consideráveis nas métricas dos modelos na etapa de treino e validação, quando aplicado em valores reduzidos, sendo assim, observou-se que o objetivo do estudo, em seu escopo,  foi atingido. 
 
 Em relação aos resultados dos dos casos de testes selecionados , após a execução de cada teste verificou-se que o cenário 04 no caso de teste 01 não presentou overfitting , pois o modelo conseguiu classificar bem as imagens de testes. No caso de teste 02 o cenário 06 para a CNN Resnet conseguiu uma melhor classificação, porém com dificuldades para classificar as classes Black-Hot e Black-Measles, e nesse caso uma opção poderia ser aplicar data augmentation na classe Black-Hot e observar o resultado. O mesmo caso ocorre com o cenário 04-i2, pois a classe Healphy obteve bom resultado, mas a classe Black-Hot parace ser classificada como Black-Measle.<br/>
+
 O caso de teste 03 no cenário 04-i2 distribuiu melhor a classificação entrea as classes Black-Hot e Black-Measle, mas ainda persistindo o problema do caso de teste 02, e como opçao a aplicação de data augmentation nessas duas classes pode ser uma opção para melhorar a taxa de acerto nos testes.<br/>
 
 
