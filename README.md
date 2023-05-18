@@ -1,5 +1,5 @@
 <!-- antes de enviar a versão final, solicitamos que todos os comentários, colocados para orientação ao aluno, sejam removidos do arquivo -->
-# Classificação de Imagens com Transfer Learning
+# Classificacao_de_Imagens_com_Transfer_Learning
 
 #### Aluno: [Mauricio Pereira Rangel](https://github.com/link_do_github)
 #### Orientador: [Felipe Borges](https://github.com/FelipeBorgesC).
